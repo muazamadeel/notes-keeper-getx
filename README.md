@@ -20,11 +20,9 @@ A professional, high-performance Notes Management application built with **Flutt
 
 ## 📸 Screenshots
 
-| Note List | Add/Edit Note |
-| :---<img width="320" height="665" alt="notes keeper" src="https://github.com/user-attachments/assets/df80e0e1-1fcc-4c7e-824e-207680a9b79b" />
-<img width="320" height="656" alt="notes keeper2" src="https://github.com/user-attachments/assets/acf6fdcf-e03b-4724-ab3c-3fe692c67124" />
-<img width="317" height="657" alt="notes keeper3" src="https://github.com/user-attachments/assets/bdee1d6b-75d2-49c0-b567-17f053ccf53c" />
-
+| Home Screen | Add Note | Note Details |
+| :---: | :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/df80e0e1-1fcc-4c7e-824e-207680a9b79b" width="250"> | <img src="https://github.com/user-attachments/assets/acf6fdcf-e03b-4724-ab3c-3fe692c67124" width="250"> | <img src="https://github.com/user-attachments/assets/bdee1d6b-75d2-49c0-b567-17f053ccf53c" width="250"> |
 
 ---
 
