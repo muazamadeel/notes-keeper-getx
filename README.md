@@ -12,7 +12,7 @@ A professional, high-performance Notes Management application built with **Flutt
 - **Offline First:** Uses **SQFlite** for lightning-fast local storage.
 - **Cloud Sync:** Real-time synchronization with **Firebase Firestore**.
 - **State Management:** Powered by **GetX** for reactive and efficient performance.
-- **Priority Management:** Organize your notes based on importance (High, Medium, Low).
+- **Priority Management:** Organize your notes based on importance (High, Low).
 - **Responsive Design:** Integrated with **Device Preview** for testing across multiple screen sizes.
 - **Clean Architecture:** Well-structured codebase following best practices.
 
@@ -21,19 +21,19 @@ A professional, high-performance Notes Management application built with **Flutt
 ## 📸 Screenshots
 
 | Note List | Add/Edit Note |
-| :---: | :---: |
-| ![Note List](https://via.placeholder.com/250x500?text=Note+List+Screen) | ![Add Note](https://via.placeholder.com/250x500?text=Add+Note+Screen) |
+| :---<img width="320" height="665" alt="notes keeper" src="https://github.com/user-attachments/assets/df80e0e1-1fcc-4c7e-824e-207680a9b79b" />
+<img width="320" height="656" alt="notes keeper2" src="https://github.com/user-attachments/assets/acf6fdcf-e03b-4724-ab3c-3fe692c67124" />
+<img width="317" height="657" alt="notes keeper3" src="https://github.com/user-attachments/assets/bdee1d6b-75d2-49c0-b567-17f053ccf53c" />
 
-*(Replace these placeholders with your actual screenshots)*
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Framework:** [Flutter](https://flutter.dev/)
-- **State Management:** [GetX](https://pub.dev/packages/get)
-- **Local Database:** [SQFlite](https://pub.dev/packages/sqflite)
-- **Cloud Database:** [Cloud Firestore](https://pub.dev/packages/cloud_firestore)
+- **Framework:** Flutter
+- **State Management:** GetX
+- **Local Database:** SQFlite
+- **Cloud Database:** Cloud Firestore
 - **Dependency Injection:** GetX Controllers
 - **UI/UX:** Material Design with custom priority colors
 
@@ -57,7 +57,7 @@ lib/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/notes-keeper-getx.git
+   git clone https://github.com/muazamadeel/notes-keeper-getx.git
    ```
 
 2. **Install dependencies:**
@@ -66,7 +66,7 @@ lib/
    ```
 
 3. **Firebase Configuration:**
-   - Create a project on [Firebase Console](https://console.firebase.google.com/).
+   - Create a project on 
    - Add an Android/iOS app.
    - Download `google-services.json` (for Android) or `GoogleService-Info.plist` (for iOS) and place them in the respective directories.
 
@@ -80,8 +80,6 @@ lib/
 ## 🤝 Contributing
 Contributions are welcome! Feel free to open an issue or submit a pull request.
 
-## 📄 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-*Developed with ❤️ by [Your Name]*
+*Developed with ❤️ by Muazam Adeel*
