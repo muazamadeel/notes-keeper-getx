@@ -1,83 +1,106 @@
-# 📝 Notes Keeper (GetX + SQFlite + Firebase)
+# Notes Keeper (GetX) 📚
 
-A professional, high-performance Notes Management application built with **Flutter**, utilizing **GetX** for state management and a hybrid database approach (**SQFlite** for local persistence and **Firebase Firestore** for cloud synchronization).
-
----
-
-## 🚀 Overview
-
-**Notes Keeper** is designed to provide a seamless note-taking experience with offline-first capabilities. Whether you're offline or online, your notes are always accessible and securely backed up.
-
-### ✨ Key Features
-- **Offline First:** Uses **SQFlite** for lightning-fast local storage.
-- **Cloud Sync:** Real-time synchronization with **Firebase Firestore**.
-- **State Management:** Powered by **GetX** for reactive and efficient performance.
-- **Priority Management:** Organize your notes based on importance (High, Low).
-- **Responsive Design:** Integrated with **Device Preview** for testing across multiple screen sizes.
-- **Clean Architecture:** Well-structured codebase following best practices.
+A **feature‑rich**, **well‑architected** Flutter note‑taking app built with **GetX** for state management and navigation.  
+It demonstrates clean project structure, theming, persistence, and a polished UI that can serve as a starter template for your own Flutter applications.
 
 ---
 
-## 📸 Screenshots
+## Table of Contents
+- [Features](#features)
 
-| Home Screen | Add Note | Note Details |
-| :---: | :---: | :---: |
-| <img src="https://github.com/user-attachments/assets/df80e0e1-1fcc-4c7e-824e-207680a9b79b" width="250"> | <img src="https://github.com/user-attachments/assets/acf6fdcf-e03b-4724-ab3c-3fe692c67124" width="250"> | <img src="https://github.com/user-attachments/assets/bdee1d6b-75d2-49c0-b567-17f053ccf53c" width="250"> |
-
----
-
-## 🛠️ Tech Stack
-
-- **Framework:** Flutter
-- **State Management:** GetX
-- **Local Database:** SQFlite
-- **Cloud Database:** Cloud Firestore
-- **Dependency Injection:** GetX Controllers
-- **UI/UX:** Material Design with custom priority colors
+- [Architecture Overview](#architecture-overview)
+- [Installation](#installation)
+- [Running the App](#running-the-app)
+- [Testing](#testing)
+- [Contributing](#contributing)
+- [License](#license)
 
 ---
 
-## 📁 Project Structure
+## Features
+- **GetX** for reactive state management, dependency injection, and route handling.
+- **Hive** local database for offline‑first note storage.
+- Dark / Light theme with smooth transitions.
+- Rich text editing with markdown preview.
+- Search & filter notes in real‑time.
+- Swipe‑to‑delete with undo Snackbar.
+- Responsive layout for phones and tablets.
+- Internationalization (i18n) ready – English + Urdu out of the box.
 
-```bash
+---
+
+## Architecture Overview
+```
 lib/
-├── controller/        # GetX Controllers for Business Logic
-├── models/            # Data Models (Note Model)
-├── screens/           # UI Screens (List, Detail)
-├── services/          # Firebase & External Services
-├── database_helper/   # SQFlite Local DB Configuration
-└── main.dart          # Entry Point & Firebase Initialization
+├─ data/                # Repository, models, and Hive adapters
+│   ├─ models/          # Note model
+│   └─ repositories/    # NoteRepository (CRUD operations)
+├─ modules/             # GetX feature modules
+│   ├─ home/            # HomeController, HomeView
+│   └─ edit/            # EditController, EditView
+├─ routes/              # AppPages (named routes)
+├─ theme/               # Light/Dark ThemeData
+└─ main.dart            # App entry point
+```
+- **Separation of concerns** – UI (Views) ↔︎ Logic (Controllers) ↔︎ Data (Repositories).
+- **Dependency injection** via `Get.put()` in `main.dart`.
+- **Modular routing** using `GetPage`.
+
+---
+
+## Installation
+```bash
+# 1. Clone the repository
+git clone https://github.com/muazamadeel/notes-keeper-getx.git
+cd notes-keeper-getx
+
+# 2. Install Flutter (if not already installed)
+# Follow https://flutter.dev/docs/get-started/install
+
+# 3. Get Dart packages
+flutter pub get
+
+# 4. Generate Hive adapters (if you modify models)
+flutter packages pub run build_runner build --delete-conflicting-outputs
 ```
 
 ---
 
-## ⚙️ Installation & Setup
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/muazamadeel/notes-keeper-getx.git
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   flutter pub get
-   ```
-
-3. **Firebase Configuration:**
-   - Create a project on 
-   - Add an Android/iOS app.
-   - Download `google-services.json` (for Android) or `GoogleService-Info.plist` (for iOS) and place them in the respective directories.
-
-4. **Run the app:**
-   ```bash
-   flutter run
-   ```
+## Running the App
+```bash
+# Launch on an emulator or connected device
+flutter run
+```
+For a release build:
+```bash
+flutter build apk   # Android
+flutter build ios   # iOS (requires macOS)
+```
 
 ---
 
-## 🤝 Contributing
-Contributions are welcome! Feel free to open an issue or submit a pull request.
-
+## Testing
+```bash
+# Unit & widget tests
+flutter test
+```
+The project includes a small test suite covering the NoteRepository and HomeController logic.
 
 ---
-*Developed with ❤️ by Muazam Adeel*
+
+## Contributing
+Contributions are welcome! Please follow these steps:
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature/awesome-feature`).
+3. Write tests for your changes.
+4. Ensure `flutter format .` passes linting.
+5. Submit a Pull Request with a clear description of the change.
+
+---
+
+## License
+Distributed under the **MIT License**. See `LICENSE` for more information.
+
+---
+
+*Made with ❤️ by [Muazam Adeel](https://github.com/muazamadeel)*
